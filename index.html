@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BossMonitor — отчёты 1С на телефоне руководителя</title>
+<meta name="description" content="BossMonitor показывает руководителю и главбуху отчёты из 1С прямо на смартфоне. Первый месяц на каждую базу бесплатно, демо работает сразу после установки.">
+<meta property="og:title" content="BossMonitor — отчёты 1С на телефоне">
+<meta property="og:description" content="Деньги на счетах, выручка, дебиторка и склад из вашей 1С на экране смартфона. Первый месяц бесплатно.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F1F3F2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2317745A'/%3E%3Cpath d='M5 21l6-7 5 4 6-9 5 5' fill='none' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="brand" href="#top" aria-label="BossMonitor, на главную">
+      <svg class="brand__mark" width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="currentColor"/><path d="M5 21l6-7 5 4 6-9 5 5" fill="none" stroke="var(--bg)" stroke-width="3"/></svg>
+      <span>BossMonitor</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#features">Отчёты</a>
+      <a href="#connect">Подключение</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn btn--head" href="https://bossmonitor.ru/" target="_blank" rel="noopener"><span>Скачать</span></a>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__stage">
+    <h1 class="hero__h1"><span class="h1l">Отчёты 1С</span><span class="h1r">на телефоне</span></h1>
+
+    <div class="reel" id="reel" aria-label="Примеры экранов приложения">
+      <div class="reel__track" id="reelTrack">
+
+        <article class="frame is-on" data-ui>
+          <div class="ui__bar"><b>Деньги на счетах</b><span class="chip">демо-данные</span></div>
+          <div class="ui__body ui__body--cash">
+            <div>
+              <p class="ui__lab">Всего на сегодня</p>
+              <p class="ui__big"><span data-count="8412600">8 412 600</span> ₽</p>
+              <div class="split" aria-hidden="true"><i style="--w:60.9%"></i><i style="--w:24.4%"></i><i style="--w:14.7%"></i></div>
+            </div>
+            <ul class="rows">
+              <li><span class="dot d1"></span><span>Расчётный, Сбербанк</span><b>5 120 400</b></li>
+              <li><span class="dot d2"></span><span>Расчётный, Тинькофф</span><b>2 050 200</b></li>
+              <li><span class="dot d3"></span><span>Касса</span><b>1 242 000</b></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="frame" data-ui>
+          <div class="ui__bar"><b>Выручка за неделю</b><span class="chip">демо-данные</span></div>
+          <div class="ui__body ui__body--rev">
+            <div>
+              <p class="ui__lab">Итого за 7 дней</p>
+              <p class="ui__big">2 669 000 ₽</p>
+              <p class="ui__sub">Лучший день — четверг, 501 000 ₽</p>
+            </div>
+            <div class="bars" aria-hidden="true">
+              <span style="--h:82%"><em>412</em><i>пн</i></span>
+              <span style="--h:77%"><em>388</em><i>вт</i></span>
+              <span style="--h:90%"><em>455</em><i>ср</i></span>
+              <span style="--h:100%" class="top"><em>501</em><i>чт</i></span>
+              <span style="--h:95%"><em>479</em><i>пт</i></span>
+              <span style="--h:47%"><em>236</em><i>сб</i></span>
+              <span style="--h:40%"><em>198</em><i>вс</i></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="frame" data-ui>
+          <div class="ui__bar"><b>Нам должны</b><span class="chip">демо-данные</span></div>
+          <div class="ui__body ui__body--debt">
+            <div>
+              <p class="ui__lab">Дебиторская задолженность</p>
+              <p class="ui__big">3 184 000 ₽</p>
+              <p class="ui__sub warn">Просрочено: 1 420 000 ₽</p>
+            </div>
+            <ul class="rows">
+              <li><span>«Альфа-Строй»</span><span class="tag tag--late">просрочка 12 дн.</span><b>1 420 000</b></li>
+              <li><span>«ТехноПарк»</span><span class="tag">срок 5 дн.</span><b>980 000</b></li>
+              <li><span>«Меридиан»</span><span class="tag">срок 14 дн.</span><b>784 000</b></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="frame" data-ui>
+          <div class="ui__bar"><b>Склад: остатки</b><span class="chip">демо-данные</span></div>
+          <div class="ui__body ui__body--stock">
+            <div>
+              <p class="ui__lab">Ниже минимума</p>
+              <p class="ui__big">2 позиции</p>
+              <p class="ui__sub">из 3 в списке</p>
+            </div>
+            <ul class="rows">
+              <li><span>Кабель ВВГ 3×2,5</span><span class="tag">норма</span><b>1 840 м</b></li>
+              <li><span>Автомат 16 А</span><span class="tag tag--late">мало</span><b>38 шт</b></li>
+              <li><span>Щиток ЩРн-12</span><span class="tag tag--late">мало</span><b>6 шт</b></li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="hero__foot">
+      <p class="hero__lead">Руководитель и главбух видят отчёты из 1С на смартфоне: быстро и без сбоев. Первый месяц бесплатно, демо без подключения.</p>
+      <div class="hero__act">
+        <a class="btn" href="https://bossmonitor.ru/" target="_blank" rel="noopener"><span>Скачать приложение</span></a>
+        <a class="link" href="#connect">Как подключить</a>
+      </div>
+    </div>
+      </div>
+</section>
+
+<!-- ============ FEATURES: команды ============ -->
+<section class="sec features" id="features" aria-labelledby="featuresH">
+  <div class="wrap">
+    <h2 class="h2" id="featuresH" data-split>Что вы видите в приложении</h2>
+    <div class="cmd" data-ui id="cmd">
+      <label class="cmd__field"><span class="sr">Поиск по отчётам</span>
+        <input id="cmdInput" type="search" placeholder="Найти отчёт" autocomplete="off" spellcheck="false">
+      </label>
+      <ul class="cmd__list" id="cmdList" role="listbox" aria-label="Отчёты">
+        <li role="option" tabindex="0" data-key="д" class="is-sel">
+          <span class="cmd__name">Деньги на счетах</span><kbd>Д</kbd>
+          <span class="cmd__desc">Остатки по расчётным счетам и кассе одним взглядом, без звонка главбуху.</span>
+        </li>
+        <li role="option" tabindex="0" data-key="в">
+          <span class="cmd__name">Выручка и продажи</span><kbd>В</kbd>
+          <span class="cmd__desc">Продажи за день, неделю и месяц: утром уже понятно, как идёт торговля.</span>
+        </li>
+        <li role="option" tabindex="0" data-key="н">
+          <span class="cmd__name">Нам должны</span><kbd>Н</kbd>
+          <span class="cmd__desc">Дебиторка по контрагентам: кто должен, сколько и на сколько дней просрочка.</span>
+        </li>
+        <li role="option" tabindex="0" data-key="м">
+          <span class="cmd__name">Мы должны</span><kbd>М</kbd>
+          <span class="cmd__desc">Кредиторка: что и кому предстоит оплатить в ближайшие дни.</span>
+        </li>
+        <li role="option" tabindex="0" data-key="с">
+          <span class="cmd__name">Склад и остатки</span><kbd>С</kbd>
+          <span class="cmd__desc">Что лежит на складе и что заканчивается, пока вы не на месте.</span>
+        </li>
+        <li role="option" tabindex="0" data-key="п">
+          <span class="cmd__name">Прибыль и расходы</span><kbd>П</kbd>
+          <span class="cmd__desc">Сколько заработали и куда ушли деньги за выбранный период.</span>
+        </li>
+      </ul>
+      <p class="cmd__none" id="cmdNone" hidden>Такого отчёта в списке нет. <a href="#contact">Напишите, какого не хватает</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ПРОТИВ ТОРМОЗОВ ============ -->
+<section class="sec then" id="why" aria-labelledby="whyH">
+  <div class="wrap">
+    <div class="then__head">
+      <h2 class="h2" id="whyH" data-split>Было книгой, стало экраном</h2>
+      <p class="then__lead">Мобильных решений для 1С мало, а те, что есть, тормозят, сбоят и просят отдельную дорогую лицензию. BossMonitor сделан ровно против этого.</p>
+    </div>
+
+    <div class="then__tiles">
+      <figure class="tile tile--a">
+        <div class="pic"><img src="assets/pittsboro-merchant-business-ledger.jpg" width="1920" height="2881" loading="lazy" alt="Страница торговой книги учёта 1833 года, исписанная пером"></div>
+        <figcaption>Книга учёта, 1833 год</figcaption>
+      </figure>
+      <figure class="tile tile--b">
+        <div class="pic"><img src="assets/abacus-actually-in-use-at-kimono-shop.jpg" width="1600" height="1200" loading="lazy" alt="Деревянные счёты и калькулятор со счётами на столе"></div>
+        <figcaption>Счёты и калькулятор, потом столбцы в таблице</figcaption>
+      </figure>
+      <figure class="tile tile--c" data-ui-wrap>
+        <div class="pocket" data-ui>
+          <div class="ui__bar"><b>Выручка сегодня</b><span class="chip">демо</span></div>
+          <div class="ui__body">
+            <p class="ui__big" data-count="412000" data-fmt="rub">412 000 ₽</p>
+            <p class="ui__sub">на 18% больше, чем вчера</p>
+            <div class="spark" aria-hidden="true"><svg viewBox="0 0 200 60" preserveAspectRatio="none"><path d="M0 48 L30 40 L60 44 L90 28 L120 32 L150 16 L200 8" fill="none" stroke="var(--accent)" stroke-width="3" vector-effect="non-scaling-stroke" pathLength="1"/></svg></div>
+          </div>
+        </div>
+        <figcaption>Сегодня: тот же отчёт в кармане</figcaption>
+      </figure>
+    </div>
+
+    <ul class="never">
+      <li><b>Не тупит</b><span>Отчёт открывается сразу, а не после раздумий.</span></li>
+      <li><b>Не сбоит</b><span>Работает ровно, без вылетов на самом нужном месте.</span></li>
+      <li><b>Не просит лицензию</b><span>Платите только подписку на BossMonitor, без дорогих допов.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ПОДКЛЮЧЕНИЕ: слайдер ============ -->
+<section class="connect" id="connect" aria-labelledby="connectH">
+  <h2 class="sr" id="connectH">Как подключить BossMonitor к 1С</h2>
+  <div class="connect__stage">
+    <div class="connect__left">
+      <p class="connect__clause" id="clause" aria-live="polite">Сначала поставьте приложение</p>
+      <p class="connect__note">Хотите сначала посмотреть? В приложении есть демо: оно работает сразу после установки, без подключения к базе.</p>
+    </div>
+    <div class="connect__right">
+      <div class="fx" id="fx">
+        <!-- stage 0: store -->
+        <div class="fx__s is-on" data-ui>
+          <div class="ui__bar"><b>RuStore</b><span class="chip">приложение</span></div>
+          <div class="ui__body store">
+            <div class="store__top">
+              <svg width="64" height="64" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="#17745A"/><path d="M5 21l6-7 5 4 6-9 5 5" fill="none" stroke="#fff" stroke-width="3"/></svg>
+              <div><b>BossMonitor</b><span>Отчёты из 1С на телефоне</span></div>
+            </div>
+            <a class="ui__btn" href="https://bossmonitor.ru/" target="_blank" rel="noopener">Установить</a>
+            <p class="ui__sub">Можно поставить и сразу с сайта bossmonitor.ru, но через RuStore проще.</p>
+          </div>
+        </div>
+        <!-- stage 1: extension -->
+        <div class="fx__s" data-ui>
+          <div class="ui__bar"><b>Расширения конфигурации</b><span class="chip">1С</span></div>
+          <div class="ui__body ext">
+            <ul class="rows">
+              <li><span>Расширение BossMonitor</span><span class="tag tag--ok">подключено</span></li>
+              <li class="faded"><span>Другие расширения</span><span class="tag">нет</span></li>
+            </ul>
+            <p class="ui__sub">Расширение берётся с сайта и ставится штатной функцией 1С. Есть подробная инструкция.</p>
+          </div>
+        </div>
+        <!-- stage 2: QR -->
+        <div class="fx__s" data-ui>
+          <div class="ui__bar"><b>Подключение базы</b><span class="chip">QR-код</span></div>
+          <div class="ui__body qr">
+            <svg id="qrSvg" viewBox="0 0 25 25" width="168" height="168" shape-rendering="crispEdges" aria-label="QR-код для подключения"></svg>
+            <p class="ui__sub">Откройте приложение, наведите камеру на код на экране 1С, и база подключена.</p>
+          </div>
+        </div>
+        <!-- stage 3: ready -->
+        <div class="fx__s" data-ui>
+          <div class="ui__bar"><b>Деньги на счетах</b><span class="chip">готово</span></div>
+          <div class="ui__body ui__body--cash2">
+            <p class="ui__lab">Всего на сегодня</p>
+            <p class="ui__big">8 412 600 ₽</p>
+            <ul class="rows">
+              <li><span class="dot d1"></span><span>Расчётный, Сбербанк</span><b>5 120 400</b></li>
+              <li><span class="dot d2"></span><span>Расчётный, Тинькофф</span><b>2 050 200</b></li>
+              <li><span class="dot d3"></span><span>Касса</span><b>1 242 000</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="connect__ctl">
+      <div class="rng"><span class="rng__track"></span><span class="rng__fill" id="rngFill"></span><input type="range" id="stageRange" min="0" max="3" step="1" value="0" aria-label="Шаг подключения" aria-valuetext="Приложение"></div>
+      <ol class="connect__names" id="stageNames">
+        <li class="is-on"><button type="button" data-i="0">Приложение</button></li>
+        <li><button type="button" data-i="1">Расширение</button></li>
+        <li><button type="button" data-i="2">QR-код</button></li>
+        <li><button type="button" data-i="3">Готово</button></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ТАРИФЫ ============ -->
+<section class="sec pricing" id="pricing" aria-labelledby="pricingH">
+  <div class="wrap">
+    <h2 class="h2" id="pricingH" data-split>Сколько стоит подписка</h2>
+    <div class="pr">
+      <div class="pr__names" role="tablist" aria-label="Срок подписки">
+        <button type="button" role="tab" data-i="0" aria-selected="false">Месяц</button>
+        <button type="button" role="tab" data-i="1" aria-selected="false">3 месяца</button>
+        <button type="button" role="tab" data-i="2" aria-selected="true" class="is-sel">6 месяцев</button>
+        <button type="button" role="tab" data-i="3" aria-selected="false">12 месяцев</button>
+      </div>
+      <div class="pr__stage" id="prStage" aria-live="polite">
+        <p class="pr__price"><span id="prNum">10 380</span><span class="pr__cur"> ₽</span></p>
+        <p class="pr__per" id="prPer">за 6 месяцев</p>
+        <p class="pr__text" id="prText">Это 1 730 ₽ в месяц, на 1 560 ₽ дешевле, чем платить помесячно.</p>
+        <p class="pr__text">Первый месяц на каждую базу бесплатно. Число пользователей, подключённых к базе, не ограничено. Оплата проходит через RuStore.</p>
+        <a class="btn" href="https://bossmonitor.ru/" target="_blank" rel="noopener"><span id="prBtn">Начать с бесплатного месяца</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec faq" id="faq" aria-labelledby="faqH">
+  <div class="wrap faq__grid">
+    <h2 class="h2 faq__h" id="faqH" data-split>Вопросы</h2>
+    <div class="faq__list">
+      <details name="faq" open>
+        <summary>Можно ли попробовать без подключения к 1С?</summary>
+        <div class="ans"><p>Да. В приложении есть демо-режим: он работает сразу после установки, подключать базу не нужно. Можно спокойно посмотреть, как выглядят отчёты.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Сколько стоит пробный период?</summary>
+        <div class="ans"><p>Первый месяц бесплатный, и он считается на каждую базу отдельно. Если у вас несколько баз, у каждой свой пробный месяц.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Сложно ли подключить базу?</summary>
+        <div class="ans"><p>Нет. Нужно поставить приложение, добавить расширение в 1С штатной функцией и отсканировать QR-код. На сайте есть подробная инструкция, и пользователи обычно справляются сами.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Где взять приложение и расширение?</summary>
+        <div class="ans"><p>Приложение есть в RuStore, ссылки на сайте bossmonitor.ru. Там же можно скачать его напрямую, но через RuStore проще. Расширение для 1С берётся с сайта.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Как платить за подписку?</summary>
+        <div class="ans"><p>Оплата идёт через RuStore. Можно взять месяц за 1 990 ₽, 3 месяца за 5 670 ₽, полгода за 10 380 ₽ или год за 14 990 ₽.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Сколько человек сможет смотреть отчёты?</summary>
+        <div class="ans"><p>Количество пользователей, подключённых к одной базе, не ограничено: руководитель, заместитель, главбух и все, кому нужны цифры.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Вы работаете только в Москве?</summary>
+        <div class="ans"><p>Мы из Москвы, но подключаем клиентов по всей России: приложение ставится на телефон, а подключение делается удалённо.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="contact" aria-labelledby="ctaH">
+  <div class="cta__grid">
+    <div class="cta__left">
+      <h2 class="cta__h" id="ctaH" data-split>Попробуйте в деле</h2>
+      <p class="cta__p">Оставьте контакт: поможем подключить вашу базу или покажем демо. Первый месяц на каждую базу бесплатный.</p>
+    </div>
+    <form class="dlg" id="leadForm" data-ui novalidate>
+      <b class="dlg__t">Подключим вашу 1С</b>
+      <label class="dlg__f"><span>Как к вам обращаться</span>
+        <input type="text" name="name" autocomplete="name" placeholder="Иван Петров" required>
+      </label>
+      <label class="dlg__f"><span>Телефон или Telegram</span>
+        <input type="text" name="contact" autocomplete="tel" placeholder="+7 900 000-00-00 или @ник" required>
+      </label>
+      <fieldset class="seg">
+        <legend class="sr">Что нужно</legend>
+        <label><input type="radio" name="intent" value="Хочу посмотреть демо" checked><span>Хочу демо</span></label>
+        <label><input type="radio" name="intent" value="Нужна помощь с подключением базы"><span>Помогите подключить</span></label>
+      </fieldset>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <label class="dlg__ok"><input type="checkbox" name="consent" required> <span>Согласен на обработку данных по <a href="privacy.html" target="_blank" rel="noopener">политике</a></span></label>
+      <button class="ui__btn ui__btn--lg" type="submit">Отправить</button>
+      <p class="dlg__msg" id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="ft ft--stmt">
+      <p>BossMonitor: отчёты из 1С на телефоне для руководителей и главбухов.</p>
+      <small>© <span id="year">2026</span> BossMonitor. <a href="privacy.html">Политика обработки данных</a></small>
+    </div>
+    <nav class="ft ft--nav" aria-label="Разделы в подвале">
+      <a href="#features">Отчёты</a>
+      <a href="#connect">Подключение</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="ft ft--time"><p>Москва<br><span id="msk">--:--</span></p></div>
+    <a class="ft ft--mail" href="https://bossmonitor.ru/" target="_blank" rel="noopener">bossmonitor.ru</a>
+    <div class="ft ft--word" aria-hidden="true">BossMonitor</div>
+    <a class="ft ft--go" href="https://bossmonitor.ru/" target="_blank" rel="noopener">
+      <span>Скачать приложение</span>
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M10 38L38 10M16 10h22v22" stroke="currentColor" stroke-width="4"/></svg>
+    </a>
+  </div>
+  <p class="foot__cr">Фото: «Pittsboro Merchant Business Ledger» (общественное достояние, Wikimedia Commons); «Abacus actually in use at kimono shop in Otaru», Syced (CC0, Wikimedia Commons).</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
